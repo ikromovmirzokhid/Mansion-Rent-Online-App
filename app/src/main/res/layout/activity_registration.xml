@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".activities.RegistrationActivity">
-        
+
         <TextView
             android:id="@+id/registrationText"
             android:layout_width="wrap_content"
@@ -239,8 +239,8 @@
 
         <ImageButton
             android:id="@+id/backArrow"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/ripple_effect_oval"
             android:src="@drawable/ic_arrow_back_black_24dp"

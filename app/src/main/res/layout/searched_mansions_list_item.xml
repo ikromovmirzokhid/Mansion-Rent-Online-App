@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/mansion_list_item_border"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/mansionImage"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mansion"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mansionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Samarqand"
+        android:textColor="#000"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="@id/mansionImage"
+        app:layout_constraintRight_toRightOf="@id/mansionImage"
+        app:layout_constraintTop_toBottomOf="@id/mansionImage" />
+
+    <TextView
+        android:id="@+id/addressText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/roboto_medium"
+        android:gravity="center"
+        android:maxWidth="130dp"
+        android:text="Navoi Street 11A, 10000, Tashkent Region"
+        android:textColor="#000"
+        app:layout_constraintLeft_toLeftOf="@id/mansionImage"
+        app:layout_constraintRight_toRightOf="@id/mansionImage"
+        app:layout_constraintTop_toBottomOf="@id/mansionName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

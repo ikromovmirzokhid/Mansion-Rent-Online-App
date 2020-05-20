@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">NewTask</string>
     <string name="signUp"><u>Sign Up</u></string>
+    <string name="google_maps_api_key">AIzaSyDOPE1VIWXWhiyxmdYggTUx2VzjFETzdvY</string>
+    <string name="check_in_text">Select Check in Date</string>
+    <string name="check_out_text">Select Check out Date</string>
+
+    <string-array name="month">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sept</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
 </resources>

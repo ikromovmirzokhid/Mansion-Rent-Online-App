@@ -44,10 +44,10 @@ class RegistrationActivity : AppCompatActivity() {
 
                 userViewModel.register(user).observe(this, Observer {
                     if (it != null) {
-                        this.finish()
                         progressDialog.dismiss()
                         Snackbar.make(register, "Successfully Registered", Snackbar.LENGTH_SHORT)
                             .show()
+                        this.finish()
                     } else {
                         progressDialog.dismiss()
                         Snackbar.make(

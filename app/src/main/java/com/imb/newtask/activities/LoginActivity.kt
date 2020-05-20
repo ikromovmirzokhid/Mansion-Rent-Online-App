@@ -37,8 +37,10 @@ class LoginActivity : AppCompatActivity() {
                     ).observe(this, Observer {
                         if (it != null) {
                             editor.putBoolean("isUserExist", true)
-                            editor.putString("userFirstName", it.firstName)
-                            editor.putString("userLastName", it.lastName)
+                            editor.putInt("userId", it.id)
+                            editor.putString("token", it.token)
+//                            editor.putString("userFirstName", it.firstName)
+//                            editor.putString("userLastName", it.lastName)
                             editor.apply()
                             Snackbar.make(
                                 passwordEditText,
